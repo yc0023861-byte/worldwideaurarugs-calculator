@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Packing Slip</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Packing Slip</h1>
+</header>
+
+<div class="container">
+
+<div class="box">
+
+<label>Buyer Name</label>
+<input id="buyerName">
+
+<label>Product</label>
+<input id="product">
+
+<label>Quantity</label>
+<input id="qty" type="number">
+
+<button onclick="packing()">
+Generate Packing Slip
+</button>
+
+<div class="result" id="packingResult">
+Packing Slip will appear here
+</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
