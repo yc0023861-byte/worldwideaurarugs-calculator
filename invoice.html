@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commercial Invoice</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Commercial Invoice</h1>
+</header>
+
+<div class="container">
+
+<div class="box">
+
+<label>Buyer Name</label>
+<input id="buyer">
+
+<label>Country</label>
+<input id="country">
+
+<label>Order Value (USD)</label>
+<input id="value" type="number">
+
+<button onclick="invoice()">
+Generate Invoice
+</button>
+
+<div class="result" id="invoiceResult">
+Invoice will appear here
+</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
