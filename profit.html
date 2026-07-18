@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etsy Profit Calculator</title>
 
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>💰 Etsy Profit Calculator</h1>
+</header>
+
+<div class="container">
+
+<div class="box">
+
+<label>Product Price ($)</label>
+<input id="price" type="number">
+
+<label>Product Cost ($)</label>
+<input id="cost" type="number">
+
+<label>Shipping Cost ($)</label>
+<input id="shipping" type="number">
+
+<button onclick="profit()">Calculate Profit</button>
+
+<div class="result" id="profitResult">
+Profit will appear here
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
