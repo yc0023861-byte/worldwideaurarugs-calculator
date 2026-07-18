@@ -66,5 +66,17 @@ document.getElementById("invoiceResult").innerHTML=`
 <b>Country:</b> ${country}<br>
 <b>Invoice Value:</b> $${value}
 `;
+function packing(){
 
+let buyer=document.getElementById("buyerName").value;
+let product=document.getElementById("product").value;
+let qty=document.getElementById("qty").value;
+
+document.getElementById("packingResult").innerHTML=`
+<b>Buyer :</b> ${buyer}<br>
+<b>Product :</b> ${product}<br>
+<b>Quantity :</b> ${qty}
+`;
+
+}
 }
