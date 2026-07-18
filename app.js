@@ -55,3 +55,16 @@ document.getElementById("profitResult").innerHTML=`
 <h3>Net Profit : $${net.toFixed(2)}</h3>
 `;
 }
+function invoice(){
+
+let buyer=document.getElementById("buyer").value;
+let country=document.getElementById("country").value;
+let value=document.getElementById("value").value;
+
+document.getElementById("invoiceResult").innerHTML=`
+<b>Buyer:</b> ${buyer}<br>
+<b>Country:</b> ${country}<br>
+<b>Invoice Value:</b> $${value}
+`;
+
+}
