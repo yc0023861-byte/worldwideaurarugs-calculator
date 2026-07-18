@@ -21,11 +21,11 @@ if(courier=="UPS") divisor=5000;
 let volumetric=(l*w*h)/divisor;
 
 let chargeable=Math.max(actual,volumetric);
-
+let totalShipping = chargeable * shippingRate;
 document.getElementById("result").innerHTML=
 <b>Shipping Rate :</b> $${shippingRate}<br><br>
 <b>Courier:</b> ${courier}<br><br>
-
+<b>Total Shipping Cost :</b> $${totalShipping.toFixed(2)}<br><br>
 📦 Volumetric Weight :
 <b>${volumetric.toFixed(2)} kg</b>
 
