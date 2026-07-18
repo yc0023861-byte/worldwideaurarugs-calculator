@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shipping Calculator</title>
 
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+
+<style>
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.box{
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+margin-top:20px;
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:14px;
+font-size:18px;
+}
+
+.result{
+margin-top:20px;
+background:#eef6ff;
+padding:15px;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>WorldwideAuraRugs Shipping Calculator</h1>
+</header>
+
+<div class="container">
+
+<div class="box">
+
+<h2>DHL • FedEx • UPS</h2>
+
+<label>Courier</label>
+
+<select id="courier">
+<option>DHL</option>
+<option>FedEx</option>
+<option>UPS</option>
+</select>
+
+<label>Length (cm)</label>
+<input id="length" type="number">
+
+<label>Width (cm)</label>
+<input id="width" type="number">
+
+<label>Height (cm)</label>
+<input id="height" type="number">
+
+<label>Actual Weight (kg)</label>
+<input id="weight" type="number">
+
+<button onclick="calculate()">Calculate</button>
+
+<div class="result" id="result">
+Result will appear here
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
