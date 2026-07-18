@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html><script src="countries.js"></script>
+<script src="app.js"></script>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -56,10 +57,7 @@ font-weight:bold;
 <h1>WorldwideAuraRugs Shipping Calculator</h1>
 </header>
 
-<div class="container">
-
-<div class="box">
-
+<body onload="loadCountries('country')">
 <h2>DHL • FedEx • UPS</h2>
 
 <label>Courier</label>
@@ -70,8 +68,8 @@ font-weight:bold;
 <option>UPS</option>
 </select>
 
-<label>Length (cm)</label>
-<input id="length" type="number">
+<label>Destination Country</label>
+<select id="country"></select>
 
 <label>Width (cm)</label>
 <input id="width" type="number">
