@@ -35,3 +35,23 @@ document.getElementById("result").innerHTML=
 `;
 
 }
+function profit(){
+
+let price=parseFloat(document.getElementById("price").value);
+let cost=parseFloat(document.getElementById("cost").value);
+let shipping=parseFloat(document.getElementById("shipping").value);
+
+if(isNaN(price)||isNaN(cost)||isNaN(shipping)){
+alert("Fill all fields");
+return;
+}
+
+let etsyFee=price*0.065;
+let paymentFee=price*0.03;
+
+let net=price-cost-shipping-etsyFee-paymentFee;
+
+document.getElementById("profitResult").innerHTML=`
+<h3>Net Profit : $${net.toFixed(2)}</h3>
+`;
+}
