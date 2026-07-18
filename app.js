@@ -23,7 +23,7 @@ let volumetric=(l*w*h)/divisor;
 let chargeable=Math.max(actual,volumetric);
 
 document.getElementById("result").innerHTML=
-`
+<b>Shipping Rate :</b> $${shippingRate}<br><br>
 <b>Courier:</b> ${courier}<br><br>
 
 📦 Volumetric Weight :
