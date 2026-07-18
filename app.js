@@ -1,5 +1,6 @@
 function calculate() {
-
+let country = document.getElementById("country").value;
+    let shippingRate = shippingRates[country] || 0;
 let l = parseFloat(document.getElementById("length").value);
 let w = parseFloat(document.getElementById("width").value);
 let h = parseFloat(document.getElementById("height").value);
